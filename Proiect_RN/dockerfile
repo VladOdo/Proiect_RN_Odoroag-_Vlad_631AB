@@ -1,0 +1,14 @@
+# 1. Folosim imaginea oficială ca bază
+FROM osrf/ros:jazzy-desktop-full
+
+# 2. Setăm variabile pentru a evita întrebările interactive la instalare
+ENV DEBIAN_FRONTEND=noninteractive
+
+# 3. Actualizăm și instalăm pachetele Python necesare permanent
+RUN apt-get update && apt-get install -y \
+    python3-pandas \
+    python3-numpy \
+    && rm -rf /var/lib/apt/lists/*
+
+# 4. Setăm directorul de lucru implicit
+WORKDIR /ws/project_data

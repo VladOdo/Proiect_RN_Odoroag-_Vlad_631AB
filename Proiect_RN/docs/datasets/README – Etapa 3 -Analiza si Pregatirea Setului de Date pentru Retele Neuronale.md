@@ -2,7 +2,7 @@
 
 **Disciplina:** Rețele Neuronale  
 **Instituție:** POLITEHNICA București – FIIR  
-**Student:** [Odoroaga Vlad]  
+**Student:** [Odoroaga Vlad-Ionut]  
 **Data:** [25 nov. 2025]  
 
 ---
